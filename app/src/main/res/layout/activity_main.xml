@@ -15,8 +15,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto"
         android:text="@string/city_name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold|italic" />
@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/lagos_welcome"
         android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_italic"
         android:padding="@dimen/landing_padding_tv"
         android:text="@string/lagos_info"
         android:textColor="@android:color/white"
@@ -34,14 +35,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/content_margin"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/content_margin"
+        android:drawablePadding="@dimen/landing_padding_tv"
+        android:fontFamily="@font/roboto_light_italic"
         android:text="@string/swipe_right"
         android:textColor="@android:color/black"
-        android:drawablePadding="@dimen/landing_padding_tv"
         android:textSize="14sp"
-        android:textStyle="italic"/>
+        android:textStyle="italic" />
 
 
 </RelativeLayout>

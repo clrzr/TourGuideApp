@@ -2,7 +2,7 @@
 <resources>
     <dimen name="backdrop_height">200dp</dimen>
     <!-- Height of each feature item in the feature list -->
-    <dimen name="list_item_height">120dp</dimen>
+    <dimen name="list_item_height">150dp</dimen>
     <dimen name="attraction_image_height">200dp</dimen>
     <dimen name="infographic_height">300dp</dimen>
     <!--Feature item padding-->
