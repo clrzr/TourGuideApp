@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.clrzr.googlealc.eko">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SelectorTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectorActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/SelectorTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.clrzr.googlealc.eko.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".CultureActivity"
+            android:theme="@style/ContentTheme"
+            android:parentActivityName=".SelectorActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.clrzr.googlealc.eko.SelectorActivity"/>
+        </activity>
+        <activity
+            android:name=".LandMarksActivity"
+            android:theme="@style/ContentTheme"
+            android:parentActivityName=".SelectorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.clrzr.googlealc.eko.SelectorActivity"/>
+        </activity>
+        <activity
+            android:name=".HotelsActivity"
+            android:theme="@style/ContentTheme"
+            android:parentActivityName=".SelectorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.clrzr.googlealc.eko.SelectorActivity"/>
+        </activity>
+        <activity
+            android:name=".MuseumActivity"
+            android:theme="@style/ContentTheme"
+            android:parentActivityName=".SelectorActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.clrzr.googlealc.eko.SelectorActivity"/>
+        </activity>
+    </application>
+
+</manifest>
