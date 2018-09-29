@@ -23,27 +23,21 @@ public class HotelsActivity extends AppCompatActivity implements ContentAdapter.
         initCollapsingToolbar();
 
 
-        //Create an ArrayList of features using the constructor declared in the Feature class
         mContents = new ArrayList<>();
         mContents.add(new Content(getString(R.string.hotel_federal_palace), getString(R.string.hotels_address_federal), getString(R.string.hotels_federal_year), R.drawable.hotels_fede));
         mContents.add(new Content(getString(R.string.hotels_radblu), getString(R.string.hotels_address_radblu), getString(R.string.hotels_radblu_year), R.drawable.hotels_radblu));
         mContents.add(new Content(getString(R.string.hotels_quilox), getString(R.string.hotels_address_quilox), getString(R.string.hotels_quilox_year), R.drawable.hotels_quilox));
         mContents.add(new Content(getString(R.string.hotels_get), getString(R.string.hotels_address_get), getString(R.string.hotels_get_year), R.drawable.hotels_get));
 
-        //Find the recyclerView
         RecyclerView recyclerView = findViewById(R.id.content_recycler_view);
 
-        //An instance of the adapter
         ContentAdapter mContentsAdapter = new ContentAdapter(mContents, this);
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(HotelsActivity.this);
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.addItemDecoration(new DividerItemDecoration(Objects.requireNonNull(HotelsActivity.this), LinearLayoutManager.VERTICAL));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        //Set adapter
         recyclerView.setAdapter(mContentsAdapter);
-
-        // notify adapter about data set changes so that it will render the list with new data
         mContentsAdapter.notifyDataSetChanged();
     }
 
@@ -80,21 +74,17 @@ public class HotelsActivity extends AppCompatActivity implements ContentAdapter.
     }
     private ArrayList<Content> mContents;
 
-    /*Toast*/
     private Toast mToast;
 
 
     @Override
     public void onRecyclerViewItemClicked(View view, int position) {
-        //Get the current content
+
         Content content = mContents.get(position);
 
-        //Cancel a toast is the user clicks rapidly
         if (mToast != null) {
             mToast.cancel();
         }
-
-        //Make a toast
         mToast = Toast.makeText(HotelsActivity.this, getString(R.string.selected_content_toast) + content.getAttractionName(), Toast.LENGTH_LONG);
         mToast.show();
 

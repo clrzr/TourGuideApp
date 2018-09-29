@@ -23,31 +23,23 @@ public class CultureActivity extends AppCompatActivity implements ContentAdapter
 
         initCollapsingToolbar();
 
-        //Create an ArrayList of features using the constructor declared in the Feature class
         mContents = new ArrayList<>();
         mContents.add(new Content(getString(R.string.culture_obas_palace), getString(R.string.culture_address_obas_palace), getString(R.string.culture_oba_year), R.drawable.culture_oba));
         mContents.add(new Content(getString(R.string.culture_fela_shrine), getString(R.string.culture_address_fela), getString(R.string.culture_fela_year), R.drawable.culture_fela));
         mContents.add(new Content(getString(R.string.culture_freedom_park), getString(R.string.culture_address_freedom), getString(R.string.culture_freedom_year), R.drawable.culture_freedom));
         mContents.add(new Content(getString(R.string.culture_national_theatre), getString(R.string.culture_address_national_theatre), getString(R.string.culture_national_theatre_year), R.drawable.culture_national_theatre));
 
-        //Find the recyclerView
         RecyclerView recyclerView = findViewById(R.id.content_recycler_view);
 
-        //An instance of the adapter
         ContentAdapter mContentsAdapter = new ContentAdapter(mContents, this);
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(CultureActivity.this);
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.addItemDecoration(new DividerItemDecoration(Objects.requireNonNull(CultureActivity.this), LinearLayoutManager.VERTICAL));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        //Set adapter
         recyclerView.setAdapter(mContentsAdapter);
-
-        // notify adapter about data set changes so that it will render the list with new data
         mContentsAdapter.notifyDataSetChanged();
     }
-
-
 
         /**
          * Will show and hide the toolbar title on scroll
@@ -80,21 +72,16 @@ public class CultureActivity extends AppCompatActivity implements ContentAdapter
     }
     private ArrayList<Content> mContents;
 
-    /*Toast*/
     private Toast mToast;
 
 
     @Override
     public void onRecyclerViewItemClicked(View view, int position) {
-        //Get the current content
         Content content = mContents.get(position);
 
-        //Cancel a toast is the user clicks rapidly
         if (mToast != null) {
             mToast.cancel();
         }
-
-        //Make a toast
         mToast = Toast.makeText(CultureActivity.this, getString(R.string.selected_content_toast) + content.getAttractionName(), Toast.LENGTH_LONG);
         mToast.show();
 

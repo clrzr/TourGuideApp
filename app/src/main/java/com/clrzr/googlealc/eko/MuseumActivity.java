@@ -22,27 +22,21 @@ public class MuseumActivity extends AppCompatActivity implements ContentAdapter.
         setContentView(R.layout.activity_museum);
         initCollapsingToolbar();
 
-        //Create an ArrayList of features using the constructor declared in the Feature class
         mContents = new ArrayList<>();
         mContents.add(new Content(getString(R.string.museums_kalakuta), getString(R.string.museums_address_kala), getString(R.string.museums_kala_year), R.drawable.museums_kala));
         mContents.add(new Content(getString(R.string.museums_nike), getString(R.string.museums_address_nike), getString(R.string.museums_nike_year), R.drawable.museums_nike));
         mContents.add(new Content(getString(R.string.museums_heritage), getString(R.string.museums_address_heritage), getString(R.string.museums_heritage_year), R.drawable.museums_heritage));
         mContents.add(new Content(getString(R.string.museums_national), getString(R.string.museums_address_national), getString(R.string.museums_national_year), R.drawable.museums_nation));
 
-        //Find the recyclerView
         RecyclerView recyclerView = findViewById(R.id.content_recycler_view);
 
-        //An instance of the adapter
         ContentAdapter mContentAdapter = new ContentAdapter(mContents, this);
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(MuseumActivity.this);
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.addItemDecoration(new DividerItemDecoration(Objects.requireNonNull(MuseumActivity.this), LinearLayoutManager.VERTICAL));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        //Set adapter
         recyclerView.setAdapter(mContentAdapter);
-
-        // notify adapter about data set changes so that it will render the list with new data
         mContentAdapter.notifyDataSetChanged();
     }
 
@@ -79,21 +73,18 @@ public class MuseumActivity extends AppCompatActivity implements ContentAdapter.
     }
     private ArrayList<Content> mContents;
 
-    /*Toast*/
     private Toast mToast;
 
 
     @Override
     public void onRecyclerViewItemClicked(View view, int position) {
-        //Get the current content
+
         Content content = mContents.get(position);
 
-        //Cancel a toast is the user clicks rapidly
+
         if (mToast != null) {
             mToast.cancel();
         }
-
-        //Make a toast
         mToast = Toast.makeText(MuseumActivity.this, getString(R.string.selected_content_toast) + content.getAttractionName(), Toast.LENGTH_LONG);
         mToast.show();
 

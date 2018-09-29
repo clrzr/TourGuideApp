@@ -1,35 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="backdrop_height">200dp</dimen>
-    <!-- Height of each feature item in the feature list -->
     <dimen name="list_item_height">150dp</dimen>
     <dimen name="attraction_image_height">200dp</dimen>
     <dimen name="infographic_height">300dp</dimen>
-    <!--Feature item padding-->
-
     <dimen name="content_margin">4dp</dimen>
-
-    <!--Item container start margin-->
     <dimen name="cardview_margin">8dp</dimen>
-
-    <!--Item TextView height-->
-    <dimen name="item_textView_height">30dp</dimen>
-
-    <!--Height of the drawer header-->
-    <dimen name="header_height">250dp</dimen>
-
-    <!--Padding of the navigation header-->
-    <dimen name="header_padding">16dp</dimen>
-
-    <!--Padding for the landing page description TextView-->
-    <dimen name="landing_padding_tv">8dp</dimen>
-
-    <!--Length and width of the dimension header image-->
-    <dimen name="header_image_width">150dp</dimen>
-
-    <!--Border width of the imageView in the header-->
-    <dimen name="header_civ_border_width">5dp</dimen>
-
-    <!--Radius of the cardView-->
+    <dimen name="main_padding_tv">8dp</dimen>
     <dimen name="cardView_radius">8dp</dimen>
 </resources>

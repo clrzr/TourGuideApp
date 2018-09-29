@@ -13,21 +13,11 @@ import java.util.ArrayList;
 
 public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.MyViewHolder> {
 
-    /*The ArrayList that contains the list of features*/
     private ArrayList<Content> mContents;
-
-    /*Context of the application*/
     private Context mContext;
-
-    /*Variable for the click listener*/
     final private RecyclerViewClickListener mRecyclerViewClickListener;
 
-    /**
-     * This is the constructor to be used
-     *
-     * @param attractions                  is the ArrayList of {@link Content} objects
-     *
-     */
+
     public ContentAdapter(ArrayList<Content> attractions, RecyclerViewClickListener recyclerViewClickListener) {
         this.mContents = attractions;
         this.mRecyclerViewClickListener = recyclerViewClickListener;
@@ -46,10 +36,9 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.MyViewHo
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        //Get the current feature
+
         Content currentContent = mContents.get(position);
 
-        //Set the appropriate attributes of the feature to the corresponding views
         holder.attractionName.setText(currentContent.getAttractionName());
         holder.attractionAddress.setText(currentContent.getAttractionAddress());
         holder.attractionYear.setText(currentContent.getAttractionYear());
@@ -62,11 +51,8 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.MyViewHo
         return mContents.size();
     }
 
-    /**
-     * The ViewHolder class containing an item
-     */
     class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        //TextViews and ImageView in the item row
+
         TextView attractionName;
         TextView attractionAddress;
         TextView attractionYear;
@@ -79,7 +65,6 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.MyViewHo
             attractionYear = itemView.findViewById(R.id.attraction_date_text_view);
             featureImage = itemView.findViewById(R.id.attraction_image);
 
-            //Call setOnClick Listener on the itemView above
             itemView.setOnClickListener(this);
         }
 
@@ -90,14 +75,8 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.MyViewHo
 
     }
 
-    /**
-     * This interface will be responsible for listening to clicks
-     */
     public interface RecyclerViewClickListener {
-        /**
-         * @param view     is the view clicked on
-         * @param position is the index of the view
-         */
+
         void onRecyclerViewItemClicked(View view, int position);
     }
 }
