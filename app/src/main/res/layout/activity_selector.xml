@@ -13,9 +13,6 @@
         tools:context=".SelectorActivity">
 
         <android.support.v7.widget.CardView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/content_margin"
@@ -35,7 +32,7 @@
                     android:layout_width="@dimen/list_item_height"
                     android:layout_height="@dimen/list_item_height"
                     android:contentDescription="@string/culture_image"
-                    android:scaleType="centerCrop"
+                    android:scaleType="fitXY"
                     tools:src="@drawable/culture_selector" />
 
                 <RelativeLayout
@@ -55,24 +52,10 @@
                         android:textAppearance="?android:textAppearanceMedium"
                         tools:text="Cultures" />
 
-
-                    <TextView
-                        android:id="@+id/culture_text_view"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/culture_name_text_view"
-                        android:gravity="bottom"
-                        android:maxLines="2"
-                        android:padding="@dimen/content_margin"
-                        android:textAppearance="?android:textAppearanceMedium"
-                        tools:text="Along Voi-Msa Road" />
                 </RelativeLayout>
             </RelativeLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/content_margin"
@@ -92,7 +75,7 @@
                     android:layout_width="@dimen/list_item_height"
                     android:layout_height="@dimen/list_item_height"
                     android:contentDescription="@string/museum_image"
-                    android:scaleType="centerCrop"
+                    android:scaleType="fitXY"
                     tools:src="@drawable/museums_selector" />
 
                 <RelativeLayout
@@ -111,25 +94,10 @@
                         android:padding="@dimen/content_margin"
                         android:textAppearance="?android:textAppearanceMedium"
                         tools:text="Museums" />
-
-
-                    <TextView
-                        android:id="@+id/museum_text_view"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/museum_name_text_view"
-                        android:gravity="bottom"
-                        android:maxLines="2"
-                        android:padding="@dimen/content_margin"
-                        android:textAppearance="?android:textAppearanceMedium"
-                        tools:text="Along Voi-Msa Road" />
                 </RelativeLayout>
             </RelativeLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/content_margin"
@@ -150,7 +118,7 @@
                     android:layout_width="@dimen/list_item_height"
                     android:layout_height="@dimen/list_item_height"
                     android:contentDescription="@string/hotels_image"
-                    android:scaleType="centerCrop"
+                    android:scaleType="fitXY"
                     tools:src="@drawable/hotels_selector" />
 
                 <RelativeLayout
@@ -170,24 +138,10 @@
                         android:textAppearance="?android:textAppearanceMedium"
                         tools:text="Hotels" />
 
-
-                    <TextView
-                        android:id="@+id/hotels_text_view"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/hotels_name_text_view"
-                        android:gravity="bottom"
-                        android:maxLines="2"
-                        android:padding="@dimen/content_margin"
-                        android:textAppearance="?android:textAppearanceMedium"
-                        tools:text="Along Voi-Msa Road" />
                 </RelativeLayout>
             </RelativeLayout>
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/content_margin"
@@ -208,7 +162,7 @@
                     android:layout_width="@dimen/list_item_height"
                     android:layout_height="@dimen/list_item_height"
                     android:contentDescription="@string/landmarks_image"
-                    android:scaleType="centerCrop"
+                    android:scaleType="fitXY"
                     tools:src="@drawable/landmarks_selector" />
 
                 <RelativeLayout
@@ -228,17 +182,6 @@
                         android:textAppearance="?android:textAppearanceMedium"
                         tools:text="Landmarks" />
 
-
-                    <TextView
-                        android:id="@+id/landmarks_text_view"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/landmarks_name_text_view"
-                        android:gravity="bottom"
-                        android:maxLines="2"
-                        android:padding="@dimen/content_margin"
-                        android:textAppearance="?android:textAppearanceMedium"
-                        tools:text="Along Voi-Msa Road" />
                 </RelativeLayout>
             </RelativeLayout>
         </android.support.v7.widget.CardView>
