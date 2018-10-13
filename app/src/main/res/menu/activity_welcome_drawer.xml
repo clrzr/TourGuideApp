@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_culture"
+            android:title="@string/culture_subtitle" />
+        <item
+            android:id="@+id/menu_hotels"
+            android:title="@string/hotels_subtitle" />
+        <item
+            android:id="@+id/menu_landmarks"
+            android:title="@string/landmarks_subtitle" />
+        <item
+            android:id="@+id/menu_museum"
+            android:title="@string/museum_subtitle" />
+    </group>
+</menu>

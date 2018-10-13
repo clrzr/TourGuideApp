@@ -2,10 +2,11 @@
     <string name="app_name" translatable="false">Èkó</string>
     <string name="city_name" translatable="false">Lagos</string>
     <string name="main_image_description">Welcome to Lagos</string>
+    <string name="content">Content</string>
     <string name="swipe_right">Swipe right to begin</string>
     <string name="culture_subtitle">Culture</string>
     <string name="museum_subtitle">Museum</string>
-    <string name="hotels_subtitle">Hotels</string>
+    <string name="hotels_subtitle">Hotels \uff06 Relaxation</string>
     <string name="landmarks_subtitle">Landmarks</string>
     <string name="attraction_image_description">Attraction Image</string>
     <string name="culture_image">Culture Image</string>
@@ -21,7 +22,7 @@
     <string name="culture_fela_shrine" translatable="false">The New African Shrine</string>
     <string name="culture_freedom_park" translatable="false">Freedom Park</string>
     <string name="culture_national_theatre" translatable="false">National Arts Theatre</string>
-    <string name="hotel_federal_palace" translatable="false">Federal Palace Hotel</string>
+    <string name="hotels_federal_palace" translatable="false">Federal Palace Hotel</string>
     <string name="hotels_radblu" translatable="false">Radisson Blu Anchorage Hotel</string>
     <string name="hotels_quilox" translatable="false">Club Quilox</string>
     <string name="hotels_get" translatable="false">Get Arena</string>
@@ -29,22 +30,22 @@
     <string name="museums_nike" translatable="false">Nike Art Gallery</string>
     <string name="museums_heritage" translatable="false">Black Heritage Museum</string>
     <string name="museums_national" translatable="false">The National Museum</string>
-    <string name="landmark_address_tinubu_square" translatable="false">Broad street, CMS, Marina.</string>
+    <string name="landmark_address_tinubu_square" translatable="false">Broad street, CMS, Marina</string>
     <string name="landmark_address_tbs" translatable="false">Awolowo road.</string>
-    <string name="landmark_address_lcc" translatable="false">KM 19, Lekki-Epe Expressway, Lagos 550104.</string>
+    <string name="landmark_address_lcc" translatable="false">KM 19, Lekki-Epe Expressway, Lagos 550104</string>
     <string name="landmark_address_ccoc" translatable="false">29 Marina St, Lagos 101231, Nigeria</string>
     <string name="culture_address_obas_palace" translatable="false">King Street</string>
-    <string name="culture_address_fela" translatable="false">Ikeja, Lagos State..</string>
-    <string name="culture_address_freedom" translatable="false">1 Hospital road, by Broad Street .</string>
+    <string name="culture_address_fela" translatable="false">Ikeja, Lagos State</string>
+    <string name="culture_address_freedom" translatable="false">1 Hospital road, by Broad Street</string>
     <string name="culture_address_national_theatre" translatable="false">Iganmu Road, Lagos</string>
     <string name="hotels_address_federal" translatable="false">Ahmadu Bello Way, Lagos, Lagos </string>
     <string name="hotels_address_radblu" translatable="false">Ozumba Mbadiwe Avenue, Lagos</string>
     <string name="hotels_address_quilox" translatable="false">Ozumba Mbadiwe Avenue, Lagos</string>
     <string name="hotels_address_get" translatable="false">Abiola Abiodun Oniru Road, Lagos</string>
-    <string name="museums_address_kala" translatable="false">Gbemisola Street, Lagos.</string>
-    <string name="museums_address_nike" translatable="false">Badagry, Lagos.</string>
-    <string name="museums_address_heritage" translatable="false">Elegushi Beach Road, Lagos.</string>
-    <string name="museums_address_national" translatable="false">Awolowo Rd, Lagos.</string>
+    <string name="museums_address_kala" translatable="false">Gbemisola Street, Lagos</string>
+    <string name="museums_address_nike" translatable="false">Badagry, Lagos</string>
+    <string name="museums_address_heritage" translatable="false">Elegushi Beach Road, Lagos</string>
+    <string name="museums_address_national" translatable="false">Awolowo Rd, Lagos</string>
     <string name="landmark_tinubu_year" translatable="false">1930</string>
     <string name="landmark_tbs_year" translatable="false">1972</string>
     <string name="landmark_lcc_year" translatable="false">1990</string>
@@ -66,5 +67,8 @@
     The city, with its adjoining conurbation, is the most populous in Nigeria, and the most populous on the African continent.
     It is one of the fastest growing cities in the world, and also one of the most populous urban agglomerations.
     Lagos is a major financial centre in Africa; the mega-city has the highest GDP, and also houses one of the largest and busiest ports on the continent.</string>
+
+    <string name="nav_header_subtitle">Welcome to Lagos</string>
+    <string name="nav_header_desc">Navigation header</string>
 
 </resources>
